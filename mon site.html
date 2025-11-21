@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<title>Documents</title>
+
+		<link
+		  rel="stylesheet"
+		  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+		/>
+
+		<style>
+			body {
+				font-family: "helvetica neue", Arial, sans-serif;
+				margin: 70px;
+				padding: 0;
+				background-color: #f7f7f7;
+				color: #333;
+			}
+			.title{
+				margin:20px;
+				border-bottom: 2px  solid #f08080;
+			display:inline-block;
+				color: #080707;
+			}
+			
+			h3,h4,h5,h6{
+				font-family:bold;
+				font-size:20px;
+				margin:auto;
+		
+			}
+				
+			
+			header.p1 {
+				border-bottom: 2px solid #f08080;
+				padding: 20px 60px;
+				font-size: 18px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			header span {
+				font-weight: bold;
+			}
+
+			header .social-icons a {
+				color: #C8CCCB;
+				text-decoration: none;
+				margin-left: 15px;
+				font-size: 18px;
+				transition: color 0.3s;
+			}
+			
+			header .social-icons a:hover {
+				color: #333;
+			}
+
+
+			.container {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 80px 60px;
+				max-width: 1100px;
+				margin: auto;
+				
+			}
+			
+
+			.rouge h1 {
+				font-size: 48px;
+				font-weight: 700;
+				margin-bottom: 20px;
+			
+			
+			}
+
+			.subtitle {
+				letter-spacing: 2px;
+				font-size: 16px;
+				color: #888;
+				text-transform: uppercase;
+				margin-bottom: 20px;
+				
+			}
+			
+			.text p {
+			    margin-right:20px;
+				line-height: 1.6;
+				font-size: 20px;
+				margin-bottom: 20px;
+				text-align: justify;
+			  text-justify: inter-word;
+			 
+				
+			}
+            
+			.button {
+				display: inline-block;
+				padding: 12px 30px;
+				border: 2px solid #f08080;
+				text-decoration: none;
+				border-radius: 5px;
+				font-weight: bold;
+				transition: 0.3s;
+				color: #333;
+			}
+
+			.button:hover {
+				background-color: #f08080;
+				color: white;
+			}
+
+			.image {
+			   flex: 1;
+			   
+			}
+
+			.image img {
+				width: 520px;
+				height: 500px;
+				border-radius: 10px;
+				display: inline-block;
+			}
+
+			@media (max-width: 900px) {
+			.container {
+			   flex-direction: column;
+			   text-align: center;
+			}
+			}
+			
+					
+			header.p2 {
+				width: 100%;
+				margin-bottom: auto;
+			}
+
+			header.p2 h2 {
+				border-bottom: solid 2px #f56a6a; 
+				display: inline-block;
+				padding-bottom: 0.4em;
+				margin: 0 0 1em 0;
+				font-weight: 700;
+				font-size: 1.75em;
+			}
+
+
+			
+			.features {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr)); 
+				gap: 2.5em 3em;
+			}
+
+			.features article {
+				display: flex;
+				align-items: flex-start;
+				gap: 1.5em;
+			}
+
+
+			
+			.features .icon {
+				background-color: white;
+				color: #ffffff !important;
+				border: 100%;
+				width: 3.5em;
+				height: 3.5em;
+				line-height: 3.5em;
+				text-align: center;
+				font-size: 1.75em;
+				flex-shrink: 0;
+			}
+
+
+			
+			.features .content h3 {
+				margin: 0 0 0.5em 0;
+				font-size: 1.35em;
+				font-weight: 700;
+			}
+
+			.features .content p {
+				margin: 0;
+				line-height: 1.7em;
+				font-size: 1em;
+				color: #555;
+			}
+
+
+			
+			@media screen and (max-width: 980px) {
+				.features {
+					grid-template-columns: 1fr; 
+				}
+			}
+			hr {
+					margin:40px;
+					margin-bottom: 100px;}
+					
+			/*.............*/
+			
+			section {
+				margin-bottom: 1rem;
+			}
+
+			
+			section header.p2 h2 {
+				 margin-bottom: 0;
+				 
+				
+			}
+
+			
+			.container {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 3rem;
+			}
+
+			
+			article {
+				border: solid 1px rgba(210, 210, 210, 0.6);
+				padding: 0;
+				border-radius: 4px;
+			}
+
+			
+			article img {
+				width: 100%;
+				height: auto;
+				border-radius: 4px;
+				margin-bottom: 1.2rem;
+			}
+
+			
+			.image2 img {
+				height: 200px;
+				object-fit: cover;
+			}
+
+			
+			article h3 {
+				font-size: 1.1rem;
+				font-weight: 700;
+				letter-spacing: 0.03em;
+				margin-bottom: 0.8rem;
+			}
+
+			
+			article p {
+				font-size: 0.95rem;
+				line-height: 1.7;
+				color: #666;
+				margin-bottom: 1.2rem;
+			}
+
+			
+			.button {
+				display: inline-block;
+				border: solid 2px #ED2D07;
+				padding: 0.6rem 1.3rem;
+				font-size: 0.9rem;
+				font-weight: 600;
+				letter-spacing: 0.05em;
+				text-decoration: none;
+				color: #ED2D07;
+				border-radius: 5px;
+				transition: 0.25s ease;
+			}
+
+			.button:hover {
+				background: #ff5c5c;   
+				color: #fff;           
+				border-color: #ff5c5c;
+			}
+
+			
+			@media screen and (max-width: 980px) {
+				.container {
+					grid-template-columns: repeat(2, 1fr);
+					gap: 2rem;
+				}
+			}
+
+			@media screen and (max-width: 736px) {
+				.container {
+					grid-template-columns: 1fr;
+				}
+			}
+						
+			
+			
+		  
+		</style>
+	</head>
+
+	<body>
+		<header class="p1">
+			 <p><span>EDITORIAL</span> by HTML5 UP</p>	
+			 <div class="social-icons">
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-github"></i></a>
+			 </div>
+		</header>
+
+		<section class="container">
+			<div class="rouge">
+				<h1>Hi, I’m Editorial by HTML5 UP</h1>
+
+				<p class="subtitle">A FREE AND FULLY RESPONSIVE SITE TEMPLATE</p>
+                <div class="text">
+				<p>
+					Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proinaliquam facilisis ante interdum congue. Integer mollis, nisl ametconvallis, porttitor magna ullamcorper, amet egestas mauris.finibus nisi nec lacinia. Nam maximus erat id euismod egestas.Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.
+				</p>
+				
+                </div>
+				<a href="#" class="button">LEARN MORE</a>
+			</div>
+
+			<div class="image">
+				<img src="mon site de formation/image/bg.jpg" alt="image du site" />
+			</div>
+	 
+		
+				
+		</section>
+		<hr>
+	
+		 
+	<section>
+	<header class="p2">
+		<h2>Erat lacinia</h2>
+	</header>
+			<div class="features">
+		<article>
+			<span class="icon fa-gem"></span>
+			<div class="content">
+				<h3>Portitor ullamcorper</h3>
+				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+			</div>
+		</article>
+		<article>
+			<span class="icon solid fa-paper-plane"></span>
+			<div class="content">
+				<h3>Sapien veroeros</h3>
+				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+			</div>
+		</article>
+		<article>
+			<span class="icon solid fa-rocket"></span>
+			<div class="content">
+				<h3>Quam lorem ipsum</h3>
+				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+			</div>
+		</article>
+		<article>
+			<span class="icon solid fa-signal"></span>
+			<div class="content">
+				<h3>Sed magna finibus</h3>
+				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+			</div>
+		</article>
+	</div>
+
+
+
+		</section>
+		<hr>
+		
+	<section>
+		<header class="p2">
+			<h2>Ipsum sed dolor</h2>
+		</header>
+
+		<div class="container">
+
+			
+			<article>
+				<img src="mon site de formation/image/baniere 1.jpg" alt="image du site" />
+				<h3>Interdum aenean</h3>
+				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
+					Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+				<a href="#" class="button">MORE</a>
+			</article>
+
+			
+			<article>
+				<img src="mon site de formation/image/takafur.jpg" alt="image du site" />
+				<h3>Nulla amet dolore</h3>
+				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
+					Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+				<a href="#" class="button">MORE</a>
+			</article>
+
+			
+			<article>
+				<div class="image2">
+					<img src="mon site de formation/image/aaaah.jpg" alt="image du site" />
+				</div>
+				<h3>Tempus ullamcorper</h3>
+				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
+					Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+				<a href="#" class="button">MORE</a>
+			</article>
+
+		</div>
+	</section>
+	</body>
+</html>
